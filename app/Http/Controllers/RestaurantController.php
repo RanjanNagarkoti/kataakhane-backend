@@ -70,7 +70,7 @@ class RestaurantController extends Controller
 
         $restaurant->update($data);
 
-        return response()->json("success", 200);
+        return response()->json(["message" => "success", "data" => $data], 200);
     }
 
 
